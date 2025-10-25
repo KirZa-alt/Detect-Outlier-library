@@ -1,0 +1,85 @@
+# 🧠 pandas-outliers
+
+`pandas-outliers` is a simple and powerful Python library that extends the functionality of **Pandas DataFrames** by adding an easy one-line method to detect outliers in your data.
+
+---
+
+## 🚀 Features
+✅ Detect outliers in any numeric column with **just one line**  
+✅ Works with **IQR (Interquartile Range)**, **Z-score**, and **Isolation Forest** methods  
+✅ 100% compatible with Pandas DataFrames  
+✅ Lightweight, beginner-friendly, and fast  
+
+---
+
+## 💡 Installation
+You can install it using pip:
+```bash
+pip install pandas-outliers
+
+import pandas as pd
+import pandas_outliers
+
+# Sample data
+data = pd.DataFrame({
+    "age": [22, 23, 25, 45, 23, 24, 120],
+    "salary": [25000, 27000, 26000, 28000, 1000000, 29000, 27500]
+})
+
+# Detect outliers in one line 👇
+outliers = data.outliers()
+
+print(outliers)
+
+output
+   age   salary
+6   120  1000000
+
+
+⚙️ Methods Supported
+
+IQR (default) – detects values outside 1.5×IQR range
+
+Z-score – detects data points beyond a given threshold
+
+Isolation Forest – detects anomalies using machine learning
+
+🧑‍💻 Author
+
+Kiran Hamza
+📍 Python & Data Science Enthusiast
+💌 [Your Email or GitHub Profile Here]
+
+🪪 License
+
+This project is licensed under the MIT License — see the LICENSE
+ file for details.
+
+⭐ Tip: If you like this library, please star the repo or share it with your data science friends!
+
+
+---
+
+## 📜 2️⃣ LICENSE (MIT License — copy this into a file named `LICENSE`)
+```text
+MIT License
+
+Copyright (c) 2025 Kiran Hamza
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights  
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell      
+copies of the Software, and to permit persons to whom the Software is          
+furnished to do so, subject to the following conditions:                       
+
+The above copyright notice and this permission notice shall be included in     
+all copies or substantial portions of the Software.                            
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR     
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,       
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE    
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER         
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,  
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE  
+SOFTWARE.
